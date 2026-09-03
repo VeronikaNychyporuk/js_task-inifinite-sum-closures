@@ -15,7 +15,7 @@ function makeInfinityAdder() {
       return currentSum;
     }
 
-    sum += params[0];
+    sum += params.reduce((acc, number) => acc + number, 0);
 
     return adder;
   };
